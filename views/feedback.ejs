@@ -1,0 +1,29 @@
+<%- include("header2") -%>
+    <center>
+        <H1 class="feed">Feedback Form</H1>
+    </center>
+    <div class="container">
+        <h1 class="para"> How do you rate overall experience?</h1><br>
+        <form action="/feedback" method="post">
+            First Name : <input type="text" name="firstname" placeholder="Enter name here">
+            Last Name : <input type="text" name="lastname" placeholder="Enter surname here">
+            <BR><BR>
+            <div>Gender:
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female <BR><BR>
+            </div>
+            Email : <input type="email" name="email" placeholder="E-mail address"><BR><BR>
+            Medium : <select name="medium">
+                <option disabled selected> -SELECT-</option>
+                <option>INDIVIDUAL</option>
+                <option>NGO's</option>
+                <option>INSTITUTION</option>
+            </select><br><br>
+            Comment :<BR>
+            <TEXTAREA rows="10" cols="75" name="comment"
+                placeholder="Enter your opinion here..."></TEXTAREA><BR><br>
+            <input type="submit" class="btns" value="Send Feedback"/>
+            <input type="button" class="btns" onclick="location.href=location.href" value="Reset" />
+        </form>
+    </div>
+<%- include("footer") -%>

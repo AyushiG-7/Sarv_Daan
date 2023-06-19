@@ -1,0 +1,37 @@
+<%- include("header2") -%>
+    <center>
+        <h1 class="item">Donate Food Details</h1>
+    </center>
+    <div class="donatebg">
+        <div class="container">
+            <form action="/Donate" method="post" enctype="multipart/form-data">
+                Pickup Where :
+                <br><input type="text" name="where1" placeholder="Select Address">
+                <input type="text" name="where2" placeholder="Select Address Line 2"><br>
+                <input type="text" name="where3" placeholder="City">
+                <input type="text" name="where4" placeholder="Region"><br>
+                <input type="text" name="where5" placeholder="Postal/Zip Code">
+                <BR><BR>
+                Food Item(s): <input type="text" name="food" placeholder="Enter Food Item(s) here">
+                <BR><BR>
+                Prefered Time:<br>
+                <input type="time" name="timeFrom" placeholder="Enter Prefered Time here"> To <input type="time"
+                    name="timeTo" placeholder="Enter Prefered Time here">
+                <BR><BR>
+                Pickup Day:<input type="date" name="date" placeholder="Enter Pickup Time here">
+                <BR><BR>
+                Medium : <select name="medium">
+                    <option disabled selected>-SELECT-</option>
+                    <option>INDIVIDUAL</option>
+                    <option>NGO's</option>
+                    <option>INSTITUTION</option>
+                </select><br><br>
+                Photos Of Food :<input type="file" id="myFile" accept="image/*" name="photo"><br><br>
+                <input type="checkbox" name="check" value="yes" />
+                <label>I assure that food quality and hygiene has maintained</label><br> <br>
+                <button type="submit" class="btns">Submit</button>
+                <input type="button" class="btns" onclick="location.href=location.href" value="Reset" />
+            </form>
+        </div>
+    </div>
+    <%- include("footer") -%>

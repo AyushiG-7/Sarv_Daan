@@ -1,0 +1,31 @@
+<%- include("header2") -%>
+    <div class="donatebg">
+    <center>
+    <h1 class="item">NGO's/Delivery Details</h1>
+</center>
+<div class="container">
+    <form action="/NGO" method="post">
+        Medium : <select name="medium">
+            <option disabled selected> -SELECT-</option>
+            <option>INDIVIDUAL</option>
+            <option>NGO's</option>
+            <option>INSTITUTION</option>
+        </select><br><br>
+        Name of Medium: <input type="text" name="name" placeholder="Enter Name of Medium here">
+        <BR><BR>
+            Name of Agent: <input type="text" name="agent" placeholder="Enter Name of Agent here">
+            <BR><BR> 
+                Deliver To:<br><input type="text" name="to1" placeholder="Select Address">
+                <input type="text" name="to2" placeholder="Select Address Line 2"><br>
+                <input type="text" name="to3" placeholder="City">
+                <input type="text" name="to4" placeholder="Region"><br>
+                <input type="text" name="to5" placeholder="Postal/Zip Code">
+                <BR><BR>
+                <input type="checkbox" name="check" value="yes"/>    
+                <label>I assure that food quality and hygiene has maintained</label><br> <br>
+                <button type="submit" class="btns">Submit</button>
+                <input type="button" class="btns" onclick="location.href=location.href" value="Reset" />
+    </form>
+</div>
+</div>
+<%- include("footer") -%>s
